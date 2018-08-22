@@ -5,7 +5,7 @@
  * Date: 2018-08-01
  * Time: 15:07
  */
-
+namespace utils;
 class MyPDO
 {
     protected static $_instance = null;

@@ -15,7 +15,7 @@
  * preg_quote($str);
  *
  */
-
+namespace utils;
 class regxTool
 {
     private $validate = array(

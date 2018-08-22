@@ -5,7 +5,7 @@
  * Date: 2018-08-03
  * Time: 16:49
  */
-
+namespace utils;
 class Utils
 {
 
