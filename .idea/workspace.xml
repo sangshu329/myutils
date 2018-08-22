@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f13c33c1-b819-43f6-a779-ddf2f21522b6" name="默认" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/myutils.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/MyPDO.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/Utils.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/UtilsCom.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/regxTool.php" />
-    </list>
+    <list default="true" id="f13c33c1-b819-43f6-a779-ddf2f21522b6" name="默认" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,17 +51,6 @@
               <item name="myutils" type="b2602c69:ProjectViewProjectNode" />
               <item name="myutils" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="myutils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myutils" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="myutils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myutils" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="utils" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -86,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\laragon\www\myutils" />
       <recent name="E:\laragon\www\myutils\src" />
     </key>
   </component>
@@ -114,12 +95,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534927970002</updated>
-      <workItem from="1534927971700" duration="1727000" />
+      <workItem from="1534927971700" duration="1795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1727000" />
+    <option name="totallyTimeSpent" value="1795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -174,6 +155,14 @@
             <marker date="1533204950073" expanded="true" signature="3458:3485" ph="Delete from `${$table}`... " />
             <marker date="1533204950073" expanded="true" signature="4470:4508" ph="select count... ${$table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
