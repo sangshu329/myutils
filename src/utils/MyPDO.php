@@ -17,7 +17,7 @@ class MyPDO
     {
         try {
             $this->dsn = 'mysql:host=' . $dbHost . ';dbname=' . $dbName;
-            $this->dbh = new PDO($this->dsn, $dbUser, $dbPwd);
+            $this->dbh = new \PDO($this->dsn, $dbUser, $dbPwd);
             $this->dbh->exec('SET character_set_connection=' . $dbCharset . ', character_set_results=' . $dbCharset . ', character_set_client=binary');
         } catch (PDOException $e) {
             $this->outputError($e->getMessage());
@@ -44,7 +44,7 @@ class MyPDO
         $recordset = $this->dbh->query($strSql);
         $this->getPDOError();
         if ($recordset) {
-            $recordset->setFetchMode(PDO::FETCH_ASSOC);
+            $recordset->setFetchMode(\PDO::FETCH_ASSOC);
             if ($queryMode == 'All') {
                 $result = $recordset->fetchAll();
             } elseif ($queryMode == 'Row') {

@@ -143,5 +143,79 @@ class UtilsCom
         return $str;
     }
 
+    function read_dir($dir)
+    {
+        $files = [];
+        $dir_list = scandir($dir);
+        foreach ($dir_list as $file) {
+            if ($file != '..' && $file != '.') {
+                $file = iconv("gbk", "UTF-8", $file); // 用于获取中文目录
+                if (is_dir($dir . '/' . $file)) {
+                    $files[] = read_dir($dir . '/' . $file);
+                } else {
+                    $files[] = $file;
+                }
+            }
+        }
+        return $files;
+    }
+
+    /**适合多文件
+     *
+     * @param $dir
+     * @return array
+     */
+    function read_dir_queue($dir)
+    {
+        $files = [];
+        $queue = [$dir];
+        while ($data = $this->func_new_each($queue)) {
+            $path = $data['value'];
+            if (is_dir($path) && $handle = opendir($path)) {
+                while ($file = iconv("gbk", 'utf-8', readdir($handle))) {
+                    if ($file == '.' || $file == '..') continue;
+                    $real_path = $files[] = $path . '\\' . $file;
+                    if (is_dir($real_path)) $queue[] = $real_path;
+                }
+            }
+            closedir($handle);
+        }
+        return $files;
+    }
+
+    /**
+     * 用于替换php7.2 each() 函数
+     * @param $array
+     * @return array|bool
+     */
+    function func_new_each(&$array){
+        $res = array();
+        $key = key($array);
+        if($key !== null){
+            next($array);
+            $res[1] = $res['value'] = $array[$key];
+            $res[0] = $res['key'] = $key;
+        }else{
+            $res = false;
+        }
+        return $res;
+    }
+
+    /**
+     * 多维数组转为一维数组方法
+     *
+     * @param array $array
+     * @return array
+     */
+    function array_flatten(array $array) {
+        $return = array();
+        array_walk_recursive($array, function($a) use (&$return) {
+            $return[] = $a;
+        });
+        return $return;
+    }
+
+
+
 
 }
